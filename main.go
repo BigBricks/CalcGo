@@ -49,3 +49,11 @@ func GetLast10(c *gin.Context) {
 		c.JSON(200, calcs)
 	}
 }
+
+//AddCalc here
+func AddCalc(c *gin.Context) {
+	var calc Calculation
+	c.BindJSON(&calc)
+	db.Create(&calc)
+	c.JSON(200, calc)
+}
