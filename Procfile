@@ -1,1 +1,1 @@
-web: CalcGo
+web: main
