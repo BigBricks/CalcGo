@@ -1,1 +1,1 @@
-web: bin/CalcGo
+web: CalcGo
